@@ -1,0 +1,231 @@
+body{
+    /*Margen predeterminado*/
+    margin: 0;
+    /* Margen pa' dentro */
+    padding: 0;
+    /*Tamaño de texto*/
+    font-size: 13px;
+    /*Fuente de texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/************************************************************/
+/***********************************/
+/*Navegación*/
+
+header{
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    /* Cómo se puede mover el elemento*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar viñetas*/
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Altura automática*/
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb(21,21,21);
+    /*Subrayado*/
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav .nav-right-section a:hover{
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Contiene a la imagen*/
+    background-size:contain;
+
+}
+
+nav .nav-right-section img{
+    /* Margin left - margen a la izquierda SOLAMENTE */
+    margin-left: 20px;
+    /* Redondear */
+    border-radius: 20px;
+    /* Anchura */
+    width: 33px;
+}
+
+/************************************************************/
+/***********************************/
+/*Main*/
+
+main {
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+main .main-logo{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/* Logo Google */
+main .main-logo img{
+    height: 100px;
+    
+}
+
+/* Sección input*/
+main .main-input{
+    /* Anchura */
+    width: 560px;
+    /*Márgenes y centrado */
+    margin: 0 auto;
+    /*Separar input de botones*/
+    margin-bottom: 30px;
+}
+
+/*Cajita gris redondeada buscador*/
+main .main-input-container{
+    /*ancho de línea, estilo y color*/
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 38px;
+    /*Quitar borde negro*/
+    border: none;
+    /*Quitar el borde cuando el input está activo*/
+    outline: none;
+    width: 380px;
+    
+}
+
+main .main-input .search-icon img{
+    background-position: center;
+    width: 15px;
+    margin-left: 5px;
+    margin-right: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+main .main-input .micro-icon img{
+    background-position: center;
+    width: 15px;
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+
+main .main-input .cam-icon img{
+    background-position: center;
+    width: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+    
+}
+
+main .main-buttons{
+    display: flex;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons button{
+    margin-right: 10px;
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #3c4043;
+}
+
+/*Nos permite agregar diseño al poner el cursor sobre el elemento*/
+main .main-input-container:hover{
+    box-shadow: 0px 0px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /*ancho de línea - estílo de línea - color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    background-color: rgb(224, 218, 218);
+    height: 100px;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer p{
+    align-self: flex-start;
+    color: #56585a;
+    font-size: 15px;
+    padding-top: 5px;
+    position: absolute;
+    left: 25px;
+}
+
+footer .footer-left{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-right: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+footer a{
+    margin-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #56585a;
+}
+
+footer .footer-right{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    margin-top: 70px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
